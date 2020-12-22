@@ -1,2 +1,2 @@
 [workspace]
-members = ["keyutils-sys"]
+members = ["keyutils-sys", "keyutils"]

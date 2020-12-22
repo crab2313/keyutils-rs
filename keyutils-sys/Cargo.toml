@@ -8,4 +8,9 @@ edition = "2018"
 
 [build-dependencies]
 keyutils-src = { git = "https://github.com/crab2313/keyutils-src-rs.git" }
-bindgen = "0.53"
+bindgen = { version = "0.56", default-features = false }
+
+[features]
+default = ["dynamic-bindgen"]
+dynamic-bindgen = ["bindgen/runtime"]
+static-bindgen = ["bindgen/static"]

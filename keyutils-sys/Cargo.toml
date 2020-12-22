@@ -1,0 +1,11 @@
+[package]
+name = "keyutils-sys"
+version = "0.1.0"
+authors = ["Qiu Wenbo <qiuwenbo@kylinos.com.cn>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+keyutils-src = { git = "https://github.com/crab2313/keyutils-src-rs.git" }
+bindgen = "0.53"
